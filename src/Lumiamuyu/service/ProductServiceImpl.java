@@ -28,4 +28,9 @@ public class ProductServiceImpl implements IProductService {
     public Product getOne(int id) {
         return dao.getOne(id);
     }
+
+    @Override
+    public int update(Product product) {
+        return dao.update(product);
+    }
 }

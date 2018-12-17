@@ -61,7 +61,7 @@ public class ProductDaoImpl implements IProductDao {
     }
 
     @Override
-    public int update(int id) {
-        return JDBCUtil.executeUpdate("update product set product_name=?,product_des=?,url=?,price=? where product_id=?",id);
+    public int update(Product product) {
+        return JDBCUtil.executeUpdate("update product set product_name=?,product_des=?,url=?,price=? where product_id=?",product.getProductName(),product.getProductDes(),product.getUrl(),product.getPrice(),product.getProductId());
     }
 }

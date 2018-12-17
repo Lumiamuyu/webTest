@@ -9,4 +9,5 @@ public interface IProductService {
     public int add(Product product);
     public int dele(int id);
     public Product getOne(int id);
+    public int update(Product product);
 }

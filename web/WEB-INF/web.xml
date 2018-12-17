@@ -70,4 +70,13 @@
         <servlet-name>doRegister</servlet-name>
         <url-pattern>/doRegister</url-pattern>
     </servlet-mapping>
+    
+    <filter>
+        <filter-name>charset</filter-name>
+        <filter-class>Lumiamuyu.Filter.CharsetFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>charset</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>
 </web-app>
